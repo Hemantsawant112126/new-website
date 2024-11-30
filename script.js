@@ -67,7 +67,7 @@ function getWeather(lat, lng) {
                 document.getElementById("pressure").textContent = `Pressure: ${main.pressure} hPa`;
 
                 // Adding more details
-                document.getElementById("weatherIcon").src = `https://openweathermap.org/img/wn/${weather.icon}.png`;
+                document.getElementById("weatherIcon").src = `https://openweathermap.org/img/wn/${weather.icon}.png`; // Correct icon URL
                 document.getElementById("windDirection").textContent = `Wind Direction: ${wind.deg}°`;
                 document.getElementById("sunrise").textContent = `Sunrise: ${new Date(sys.sunrise * 1000).toLocaleTimeString()}`;
                 document.getElementById("sunset").textContent = `Sunset: ${new Date(sys.sunset * 1000).toLocaleTimeString()}`;
