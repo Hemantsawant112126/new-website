@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather and Location Info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather and Location Info</h1>
+        <input type="text" id="locationInput" placeholder="Enter a city or address">
+        <button onclick="getWeatherData()">Get Weather</button>
+        
+        <div id="locationInfo">
+            <p id="formattedAddress"></p>
+            <p id="latitude"></p>
+            <p id="longitude"></p>
+            <p id="country"></p>
+            <p id="city"></p>
+            <p id="state"></p>
+        </div>
+        
+        <div id="weatherInfo">
+            <p id="weatherDescription"></p>
+            <p id="temperature"></p>
+            <p id="humidity"></p>
+            <p id="windSpeed"></p>
+            <p id="pressure"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
